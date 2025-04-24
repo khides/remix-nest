@@ -100,7 +100,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@xyflow/react": "^12.3.6",
     "@zodios/core": "^10.9.6",
-    "axios": "^1.6.8",
+    "axios": "^1.8.4",
     "browser-image-compression": "^2.0.2",
     "cal-sans": "^1.0.1",
     "class-variance-authority": "^0.7.0",
