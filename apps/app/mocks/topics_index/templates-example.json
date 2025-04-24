@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name": "Template 1",
+    "description": "This is a template",
+    "category": "Announcements"
+  },
+  {
+    "id": "2",
+    "name": "Template 2",
+    "description": "This is a template",
+    "category": "General"
+  }
+]

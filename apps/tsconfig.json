@@ -1,0 +1,63 @@
+{
+  "include": [
+    "env.d.ts",
+    "custom-type.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".react-router/types/**/*",
+    "tests/global-setup.ts"
+  ],
+  "ts-node": {
+    "experimentalSpecifierResolution": "node",
+    "transpileOnly": true,
+    "esm": true
+  },
+  "compilerOptions": {
+    "types": [
+      "@react-router/node",
+      "vite/client"
+    ],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ES2022"
+    ],
+    "rootDirs": [
+      "./.react-router/types",
+      "."
+    ],
+    "plugins": [
+      {
+        "name": "@react-router/dev"
+      }
+    ],
+    // "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "target": "ES2022",
+    "strict": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./app/*",
+        "./.react-router/types/app/*"
+      ]
+    },
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true
+  },
+  "exclude": [
+    "./app/components/*/deprecated/**/*",
+    "./app/components/*/depricated/**/*",
+    "./app/route_depricated/**/*",
+    // "./app/**/*.stories.tsx",
+    "./app/helpers/**/*",
+  ]
+}

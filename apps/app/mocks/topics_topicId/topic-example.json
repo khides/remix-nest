@@ -1,0 +1,86 @@
+[
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "3 days ago",
+    "content": "test",
+    "category": "comment",
+    "color": "gray-200"
+  },
+  {
+    "icon": "https://avatars.githubusercontent.com/u/1?v=4",
+    "postedBy": "John",
+    "postedAt": "12 hours ago",
+    "content": "Comment example",
+    "category": "comment",
+    "color": "gray-200",
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 1"
+      },
+      {
+        "icon": "https://avatars.githubusercontent.com/u/1?v=4",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 2"
+      },
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 2"
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "content": "LL example",
+    "category": "LL",
+    "color": "orange-200",
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 1"
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "content": "Todo example",
+    "category": "todo",
+    "color": "red-200",
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 1"
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "content": "Action example",
+    "category": "action",
+    "color": "green-200",
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "content": "Reply example 1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "name": "supabase",
+  "version": "1.0.0",
+  "description": "- [Local Development](https://supabase.com/docs/guides/cli/local-development) - [Managing Environments](https://supabase.com/docs/guides/cli/managing-environments) - [Seeding your database](https://supabase.com/docs/guides/cli/seeding-your-database)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
+    "format": "npx prettier --write ./**/*.{ts,tsx}",
+    "codegen": "npx supabase gen types typescript --db-url \"postgresql://postgres:postgres@localhost:54322/postgres\" > ./schema.ts && mkdir -p ../api/src/__generated__ && cp ./schema.ts ../api/src/__generated__/schema.ts && mkdir -p ../apps/app/supabase/__generated__ && cp ./schema.ts ../apps/app/supabase/__generated__/schema.ts ",
+    "sb": "npx supabase"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@snaplet/copycat": "^5.0.0",
+    "@snaplet/seed": "^0.98.0",
+    "@types/pg": "^8.11.8",
+    "@typescript-eslint/eslint-plugin": "^8.4.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "pg": "^8.12.0",
+    "prettier": "^3.3.3",
+    "supabase": "^2.1.1"
+  },
+  "dependencies": {
+    "@types/node": "^22.9.0",
+    "bcryptjs": "^2.4.3",
+    "ts-morph": "^24.0.0",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.0"
+  },
+  "type": "module"
+}

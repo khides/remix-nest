@@ -1,0 +1,45 @@
+{
+    "name": "test-api",
+    "initializeCommand": "docker network inspect test-network || docker network create test-network",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "api",
+    "workspaceFolder": "/api",
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "codezombiech.gitignore",
+                "eamodio.gitlens",
+                "exiasr.hadolint",
+                "mosapride.zenkaku",
+                "ms-azuretools.vscode-docker",
+                "njpwerner.autodocstring",
+                "oderwat.indent-rainbow",
+                "pkief.material-icon-theme",
+                "shardulm94.trailing-spaces",
+                "usernamehw.errorlens",
+                "yzhang.markdown-all-in-one",
+                "tamasfe.even-better-toml",
+                "charliermarsh.ruff",
+                "bradlc.vscode-tailwindcss",
+                "orta.vscode-jest"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.css": "tailwindcss"
+                },
+                "editor.formatOnSave": true,
+                "files.insertFinalNewline": true,
+                "files.trimTrailingWhitespace": true,
+                "terminal.integrated.defaultProfile.linux": "zsh",
+                "terminal.integrated.profiles.linux": {
+                    "zsh": {
+                        "path": "/bin/zsh"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "workbench.colorCustomizations": {
+        // "activityBar.background": "#112255",
+        "titleBar.activeBackground": "#305533",
+        "titleBar.inactiveBackground": "#305533"
+    },
+    "path-intellisense.mappings": {
+        "~": "${workspaceFolder}/app"
+    }
+}

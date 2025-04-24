@@ -1,0 +1,34 @@
+[
+  {
+    "id": "contextId1",
+    "name": "contextName1",
+    "description": "This is description of contextName1",
+    "type": "include",
+    "topicId": "topicId1",
+    "topicName": "topicName1"
+  },
+  {
+    "id": "contextId2",
+    "name": "contextName2",
+    "description": "This is description of contextName2",
+    "type": "related",
+    "topicId": "topicId2",
+    "topicName": "topicName2"
+  },
+  {
+    "id": "contextId3",
+    "name": "contextName3",
+    "description": "This is description of contextName3",
+    "type": "include",
+    "topicId": "topicId3",
+    "topicName": "topicName3"
+  },
+  {
+    "id": "contextId4",
+    "name": "contextName4",
+    "description": "This is description of contextName4",
+    "type": "related",
+    "topicId": "topicId4",
+    "topicName": "topicName4"
+  }
+]

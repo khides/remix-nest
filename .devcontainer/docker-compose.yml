@@ -1,0 +1,46 @@
+services:
+  apps:
+    container_name: test
+    image: mcr.microsoft.com/devcontainers/javascript-node:20
+    working_dir: /apps
+    volumes:
+      - ../apps:/apps
+      - ../hocuspocus/app:/apps/websocket
+    restart: always
+    ports:
+      - 5173:5173
+      - 1234:1234
+      - "${HOST_IP:-127.0.0.1}:5174:5174"
+      - "${HOST_IP:-127.0.0.1}:12000:3000"
+      - "${HOST_IP:-127.0.0.1}:6006:6006"
+    tty: true
+    networks:
+      - test-network
+    stdin_open: true
+    command: /bin/bash
+    environment:
+      - PATH=/usr/local/bin:/usr/bin:/bin:/apps/bin
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+  api:
+    container_name: test-api
+    image: mcr.microsoft.com/devcontainers/javascript-node:20
+    working_dir: /api
+    volumes:
+      - ../api:/api
+    restart: always
+    ports:
+      - 3000:3000
+    tty: true
+    networks:
+      - test-network
+    stdin_open: true
+    command: /bin/bash
+    environment:
+      - PATH=/usr/local/bin:/usr/bin:/bin:/apps/bin
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  test-network:
+    external: true

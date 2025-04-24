@@ -1,0 +1,22 @@
+{
+  "orgs": [
+    {
+      "id": 1,
+      "orgname": "ut-issl",
+      "fullname": "東大中須賀船瀬五十里研究室",
+      "email": "hoge@example.com",
+      "readme": "東大isslのオーガナイゼーションです。",
+      "avatarUrl": "/app/assets/icons/user_icon_1.svg",
+      "people": [
+        {
+          "id": "1",
+          "icon": "/app/assets/icons/user_icon_1.svg"
+        },
+        {
+          "id": "2",
+          "icon": "/app/assets/icons/user_icon_1.svg"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Filterign Shortcut 1",
+    "description": "",
+    "label": "Filterign Shortcut 1",
+    "icon": "fa-bullhorn",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "Announcements"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  },
+  {
+    "name": "Filterign Shortcut 2",
+    "description": "",
+    "label": "Filterign Shortcut 2",
+    "icon": "fa-comments",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "General"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  },
+  {
+    "name": "Filterign Shortcut 3",
+    "description": "",
+    "label": "Filterign Shortcut 3",
+    "icon": "fa-lightbulb",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "Ideas"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  },
+  {
+    "name": "Filterign Shortcut 4",
+    "description": "",
+    "label": "Filterign Shortcut 4",
+    "icon": "fa-poll",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "Polls"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  },
+  {
+    "name": "Filterign Shortcut 5",
+    "description": "",
+    "label": "Filterign Shortcut 5",
+    "icon": "fa-question-circle",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "Q&A"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  },
+  {
+    "name": "Filterign Shortcut 6",
+    "description": "",
+    "label": "Filterign Shortcut 6",
+    "icon": "fa-eye",
+    "filterings": [
+      {
+        "filterKey": "category",
+        "value": "Show and tell"
+      },
+      {
+        "filterKey": "label",
+        "value": "frontend"
+      }
+    ]
+  }
+]

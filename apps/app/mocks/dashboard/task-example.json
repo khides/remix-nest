@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Design prototype",
+    "description": "Create a high-fidelity prototype for the new feature",
+    "status": "todo"
+  },
+  {
+    "id": 2,
+    "title": "Implement backend API",
+    "description": "Develop the backend API endpoints for the feature",
+    "status": "inProgress"
+  },
+  {
+    "id": 3,
+    "title": "Write unit tests",
+    "description": "Write unit tests for the frontend components",
+    "status": "done"
+  }
+]

@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Term",
+    "description": "A term is a single word or phrase that is used to describe a product or service.",
+    "number": 1,
+    "templates": [
+      {
+        "id": 1,
+        "name": "Domain-specific term"
+      },
+      {
+        "id": 2,
+        "name": "General term"
+      }
+    ],
+    "properties": [
+      {
+        "id": 1,
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "id": 2,
+        "name": "description",
+        "type": "richText"
+      }
+    ],
+    "createdBy": "User 1",
+    "createdAt": "2021-01-01T00:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "name": "LL",
+    "description": "Lessons Learned",
+    "number": 2,
+    "templates": [
+      {
+        "id": 3,
+        "name": "From system development"
+      },
+      {
+        "id": 4,
+        "name": "From project management"
+      },
+      {
+        "id": 5,
+        "name": "From business analysis"
+      }
+    ],
+    "properties": [
+      {
+        "id": 3,
+        "name": "title",
+        "type": "string",
+        "required": true
+      },
+      {
+        "id": 4,
+        "name": "description",
+        "type": "richText",
+        "required": true
+      }
+    ],
+    "createdBy": "User 2",
+    "createdAt": "2021-01-02T00:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "name": "Todo",
+    "description": "A list of tasks that need to be completed.",
+    "number": 3,
+    "templates": [
+      {
+        "id": 6,
+        "name": "Daily Todo"
+      },
+      {
+        "id": 7,
+        "name": "Weekly Todo"
+      }
+    ],
+    "properties": [
+      {
+        "id": 5,
+        "name": "name",
+        "type": "string",
+        "required": true
+      },
+      {
+        "id": 6,
+        "name": "description",
+        "type": "richText",
+        "required": true
+      },
+      {
+        "id": 7,
+        "name": "dueDate",
+        "type": "date",
+        "required": true
+      }
+    ],
+    "createdBy": "User 3",
+    "createdAt": "2021-01-03T00:00:00.000Z"
+  }
+]

@@ -1,0 +1,178 @@
+[
+  {
+    "onUpdate": "",
+    "id": "1",
+    "priority": 100,
+    "text": "action1",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "YesNo",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "2",
+    "priority": 70,
+    "text": "action2",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "SingleChoice",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "3",
+    "priority": 30,
+    "text": "action3",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "MultipleChoice",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "4",
+    "priority": 10,
+    "text": "action4",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "OpenEnded",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "5",
+    "priority": 100,
+    "text": "action5",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "YesNo",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "6",
+    "priority": 70,
+    "text": "action6",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "SingleChoice",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "7",
+    "priority": 30,
+    "text": "action7",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "MultipleChoice",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "8",
+    "priority": 10,
+    "text": "action8",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "OpenEnded",
+    "state": "Open",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "9",
+    "priority": 100,
+    "text": "action1",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "YesNo",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "10",
+    "priority": 70,
+    "text": "action2",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "SingleChoice",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "11",
+    "priority": 30,
+    "text": "action3",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "MultipleChoice",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "12",
+    "priority": 10,
+    "text": "action4",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "ClosedEnded",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "13",
+    "priority": 100,
+    "text": "action5",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "YesNo",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "14",
+    "priority": 70,
+    "text": "action6",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "SingleChoice",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "15",
+    "priority": 30,
+    "text": "action7",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "MultipleChoice",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  },
+  {
+    "onUpdate": "",
+    "id": "16",
+    "priority": 10,
+    "text": "action8",
+    "labels": ["label1", "label2"],
+    "subtext": "subtext",
+    "type": "ClosedEnded",
+    "state": "Closed",
+    "choices": ["choice1", "choice2"]
+  }
+]

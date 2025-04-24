@@ -1,0 +1,386 @@
+{
+    "Metadata": {
+        "size": 123,
+        "topic_id": "ABCD1234",
+        "file_id": "WXYZ5678",
+        "version": "1.0.0",
+        "title": "Sample Title",
+        "created_at": "2025-01-01T10:00:00Z",
+        "created_by": "user123",
+        "reviewer": [
+            "user456"
+        ],
+        "assignee": [
+            "user789"
+        ],
+        "latest_snapshot_id": "snap002" // 追加
+    },
+    "User": [ // ユーザー定義
+        {
+            "id": "user123",
+            "name": "Alice",
+            "email": "alice@example.com",
+            "description": "Creator of the document",
+            "accounts": [
+                {
+                    "service": "github",
+                    "username": "alice-gh",
+                    "user_id": "alice_github_001",
+                    "profile_url": "https://github.com/alice-gh",
+                    "metadata": {
+                        "github_followers": "10"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "user456",
+            "name": "Bob",
+            "email": "bob@example.com",
+            "description": "Reviewer",
+            "accounts": [
+                {
+                    "service": "slack",
+                    "username": "bob-slack",
+                    "user_id": "bob_slack_101",
+                    "profile_url": "https://example.slack.com/bob",
+                    "metadata": {}
+                }
+            ]
+        },
+        {
+            "id": "user789",
+            "name": "Carol",
+            "email": "carol@example.com",
+            "description": "Assignee",
+            "accounts": []
+        }
+    ],
+    "Tag": [ // 割り当てられているタグとその定義
+        {
+            "name": "Urgent",
+            "color": "#FF0000",
+            "description": "Requires immediate attention"
+        },
+        {
+            "name": "Bug",
+            "color": "#00FF00",
+            "description": "Indicates a bug"
+        }
+    ],
+    "File": [ // ファイル
+        {
+            "path": "documents/report.pdf",
+            "size": 2048,
+            "hash": "UkVQT1JUX0hBU0g=",
+            "compression_method": "ZSTD",
+            "compression_level": 5,
+            "content": "QmFzZTY0IEVuY29kZWQgQ29udGVudA=="
+        },
+        {
+            "path": "images/icon.png",
+            "size": 512,
+            "hash": "SUNPTl9IQVNI",
+            "compression_method": "NONE",
+            "compression_level": 0,
+            "content": "aWNvbg=="
+        }
+    ],
+    "Data": [
+        {
+            "id": "data001",
+            "schema_id": "schema001",
+            "schema_version": 2,
+            "properties": [
+                { //ドキュメントプロパティ
+                    "property_name": "__document",
+                    "value": {
+                        "doc_value": "yjsJson"
+                    }
+                }, // 追加
+                { // 文字列プロパティ
+                    "property_name": "title",
+                    "value": {
+                        "string_value": "Example Title"
+                    }
+                },
+                { // 数値プロパティ
+                    "property_name": "count",
+                    "value": {
+                        "int_value": 9999
+                    }
+                },
+                { // リストプロパティ
+                    "property_name": "flags",
+                    "value": {
+                        "list_value": [
+                            {
+                                "bool_value": true
+                            },
+                            {
+                                "bool_value": false
+                            },
+                            {
+                                "string_value": "additional_info"
+                            }
+                        ]
+                    }
+                }
+            ]
+            // "latest_snapshot_id": "snap001" 削除
+        },
+        {
+            "id": "data002",
+            "schema_id": "schema002",
+            "schema_version": 1,
+            "properties": [
+                { //ドキュメントプロパティ
+                    "property_name": "__document",
+                    "value": {
+                        "doc_value": "yjsJson"
+                    }
+                }, // 追加
+                { // 真偽値プロパティ
+                    "property_name": "is_active",
+                    "value": {
+                        "bool_value": true
+                    }
+                },
+                { // マッププロパティ
+                    "property_name": "info_map",
+                    "value": {
+                        "map_value": {
+                            "keyA": {
+                                "string_value": "Some text"
+                            },
+                            "keyB": {
+                                "double_value": 42.195
+                            }
+                        }
+                    }
+                }
+            ]
+            // "latest_snapshot_id": "snap002" 削除
+        }
+    ],
+    "Schema": [
+        { //変更前schema定義
+            "id": "schema001",
+            "name": "TestSchema",
+            "version": 2,
+            "description": "Schema for data001",
+            "property_definitions": [
+                { // ドキュメントプロパティ
+                    "name": "__document",
+                    "description": "Embedded doc property",
+                    "type": {
+                        "name": "docType",
+                        "description": "Document type (JSON stored as string)",
+                        "base_type": "STRING",
+                        "validator": ".*",
+                        "serializer": "stringSerializer",
+                        "deserializer": "stringDeserializer",
+                        "metadata": {
+                            "format": "JSON"
+                        }
+                    }
+                },
+                { // 文字列プロパティ
+                    "name": "title",
+                    "description": "Title property",
+                    "type": {
+                        "name": "stringType",
+                        "description": "A simple string field",
+                        "base_type": "STRING",
+                        "validator": "^[a-zA-Z0-9 ]+$",
+                        "serializer": "stringSerializer",
+                        "deserializer": "stringDeserializer",
+                        "metadata": {}
+                    }
+                },
+                { // 数値プロパティ
+                    "name": "count",
+                    "description": "Count property",
+                    "type": {
+                        "name": "intType",
+                        "description": "Integer field",
+                        "base_type": "INT",
+                        "validator": "^[0-9]+$",
+                        "serializer": "intSerializer",
+                        "deserializer": "intDeserializer",
+                        "metadata": {}
+                    }
+                },
+                { // リストプロパティ
+                    "name": "flags",
+                    "description": "List of flags property",
+                    "type": {
+                        "name": "listType",
+                        "description": "List of booleans / strings",
+                        "base_type": "STRING",
+                        "validator": ".*",
+                        "serializer": "listSerializer",
+                        "deserializer": "listDeserializer",
+                        "metadata": {}
+                    }
+                }
+            ]
+        },
+        { //変更後schema定義
+            "id": "schema002",
+            "name": "SecondSchema",
+            "version": 1,
+            "description": "Schema for data002",
+            "property_definitions": [
+                { // ドキュメントプロパティ
+                    "name": "__document",
+                    "description": "Always included doc property",
+                    "type": {
+                        "name": "docType",
+                        "description": "Document type (JSON stored as string)",
+                        "base_type": "STRING",
+                        "validator": ".*",
+                        "serializer": "stringSerializer",
+                        "deserializer": "stringDeserializer",
+                        "metadata": {
+                            "format": "JSON"
+                        }
+                    }
+                },
+                { // 真偽値プロパティ
+                    "name": "is_active",
+                    "description": "Toggle property",
+                    "type": {
+                        "name": "booleanType",
+                        "description": "Boolean field",
+                        "base_type": "BOOL",
+                        "validator": "",
+                        "serializer": "boolSerializer",
+                        "deserializer": "boolDeserializer",
+                        "metadata": {}
+                    }
+                },
+                { // マッププロパティ
+                    "name": "info_map",
+                    "description": "Map property",
+                    "type": {
+                        "name": "mapType",
+                        "description": "Arbitrary map field",
+                        "base_type": "STRING",
+                        "validator": ".*",
+                        "serializer": "mapSerializer",
+                        "deserializer": "mapDeserializer",
+                        "metadata": {}
+                    }
+                }
+            ]
+        }
+    ],
+    "Snapshot": [
+        { // スナップショット1
+            "id": "snap001",
+            "parent_snapshot_id": "snap000",
+            "data_id": "data001",
+            "new_version": 2,
+            "user_id": "user123",
+            "message": "Initial snapshot for data001",
+            "timestamp": "2025-01-03T13:00:00Z",
+            "type": "FULL"
+            // "data": "SW5pdGlhbCBkYXRhIFNwbmFwc2hvdA==" 削除
+        },
+        { // スナップショット2
+            "id": "snap002",
+            "parent_snapshot_id": "snap001",
+            "data_id": "data002",
+            "new_version": 3,
+            "user_id": "user456",
+            "message": "Update snapshot for data002",
+            "timestamp": "2025-01-04T09:00:00Z",
+            "type": "FULL"
+            // "data": "VXBkYXRlZCBkYXRhIFNwbmFwc2hvdA==" 削除
+        }
+    ],
+    "Timeline": [
+        { // タイトル変更イベント
+            "id": "event001",
+            "user_id": "user123",
+            "timestamp": "2025-01-02T10:05:00Z",
+            "event_type": 1,
+            "description": "Title changed",
+            "title_change_event": {
+                "old_title": "Old Title",
+                "new_title": "New Title"
+            },
+            "metadata": {}
+        },
+        { // ステータス変更イベント
+            "id": "event002",
+            "user_id": "user456",
+            "timestamp": "2025-01-03T09:30:00Z",
+            "event_type": 2,
+            "description": "Status changed",
+            "status_change_event": {
+                "old_status": "OPEN",
+                "new_status": "IN_PROGRESS"
+            },
+            "metadata": {}
+        },
+        { //リプライ1
+            "id": "event003",
+            "user_id": "user789",
+            "timestamp": "2025-01-03T11:00:00Z",
+            "event_type": 4,
+            "description": "Conversation event with Yjs",
+            "message_event": {
+                "conversation_id": "conv_abc",
+                "root_event_id": "event001",
+                "content": "yjsJson",
+                "action": "CREATE"
+            },
+            "metadata": {}
+        },
+        { // スナップショットイベント
+            "id": "event004",
+            "user_id": "user123",
+            "timestamp": "2025-01-03T13:00:00Z",
+            "event_type": 5,
+            "description": "Snapshot event",
+            "snapshot_event": {
+                "snapshot_id": "snap001"
+            },
+            "metadata": {}
+        },
+        { //コメント
+            "id": "event005",
+            "user_id": "user789",
+            "timestamp": "2025-01-03T11:00:00Z",
+            "event_type": 4,
+            "description": "Conversation event with Yjs",
+            "message_event": {
+                "message_id": "msg_abc",
+                "content": "yjsJson",
+                "action": "CREATE"
+            },
+            "metadata": {}
+        },
+        { //リプライ2
+            "id": "event006",
+            "user_id": "user789",
+            "timestamp": "2025-01-04T11:00:00Z",
+            "event_type": 4,
+            "description": "Conversation event with Yjs",
+            "message_event": {
+                "message_id": "msg_abc",
+                "reply_to_event_id": "event001",
+                "content": "yjsJson",
+                "action": "CREATE"
+            },
+            "metadata": {}
+        }
+    ],
+    "Topic": { // 関連トピック
+        "id": "topic001",
+        "relation_type": "sub_task",
+        "description": "A related sub-task"
+    }
+}

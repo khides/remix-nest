@@ -1,0 +1,27 @@
+# Directory pattern
+apps:
+  - changed-files:
+      - any-glob-to-any-file: 'apps/**'
+  - head-branch: ['frontend']
+
+backend:
+  - changed-files:
+      - any-glob-to-any-file: 'backend/**'
+  - head-branch: ['backend']
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file: 'docs/**'
+      - any-glob-to-any-file: 'README.md'
+
+# Branch pattern
+feature:
+ - head-branch: ['^feature', 'feature', 'feat']
+bug:
+  - head-branch: ['^fix/', 'fix', '^bug/', 'bug']
+improvement:
+  - head-branch: ['^imprv/', 'imprv']
+chore:
+  - head-branch: ['^chore/', 'chore']
+release:
+  - head-branch: ['^release/']

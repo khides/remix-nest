@@ -1,0 +1,32 @@
+[
+  {
+    "knowledgeId": "1",
+    "name": "todo: implement project it to nodes",
+    "category": "todo",
+    "labels": ["bug", "frontend"],
+    "createdBy": "nkckt",
+    "createdAt": "3 days ago",
+    "icon": "UserIcon",
+    "description": "This is a description of the todo."
+  },
+  {
+    "knowledgeId": "2",
+    "name": "action: Bought a new car",
+    "category": "action",
+    "labels": ["bug", "frontend"],
+    "createdBy": "LilKoke",
+    "createdAt": "LL: Supabase bug",
+    "icon": "UserIcon",
+    "description": "This is a description of the LL."
+  },
+  {
+    "knowledgeId": "3",
+    "name": "term: about 'action'",
+    "category": "LL",
+    "labels": ["bug", "frontend"],
+    "createdBy": "nkckt",
+    "createdAt": "3 days ago",
+    "icon": "UserIcon",
+    "description": "This is a description of the term."
+  }
+]

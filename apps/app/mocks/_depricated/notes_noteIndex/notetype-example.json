@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Action",
+    "color": "#fe9696bd",
+    "icon": "chart-line"
+  },
+  {
+    "name": "Requirement",
+    "color": "#fcc996bd",
+    "icon": "clipboard-check"
+  },
+  {
+    "name": "LessonsLearned",
+    "color": "#96fca2bd",
+    "icon": "book-open-reader"
+  },
+  {
+    "name": "Q&A",
+    "color": "#96f0fcbd",
+    "icon": "q"
+  }
+]

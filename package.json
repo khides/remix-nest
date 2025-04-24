@@ -1,0 +1,16 @@
+{
+    "scripts": {
+        "codegen": "npm --prefix ./supabase run codegen && npm --prefix ./api run codegen && mkdir -p ./apps/app/nest-client/__generated__  && cp ./api/src/__generated__/openapi.json ./apps/app/nest-client/__generated__/openapi.json && cp ./api/src/__generated__/openapi.yaml ./apps/app/nest-client/__generated__/openapi.yaml && npm --prefix ./apps run codegen",
+        "sb": "npx supabase",
+        "format": "npm --prefix ./apps run format && npm --prefix ./api run format ",
+        "typecheck": "npm --prefix ./apps run typecheck && npm --prefix ./api run typecheck"
+    },
+    "devDependencies": {
+        "supabase": "^2.1.1",
+        "@playwright/test": "^1.51.1"
+
+    },
+    "dependencies": {
+        "@nestjs/swagger": "^11.1.0"
+    }
+}

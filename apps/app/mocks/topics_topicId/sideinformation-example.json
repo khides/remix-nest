@@ -1,0 +1,65 @@
+[
+  {
+    "key": "Reviewer",
+    "reviewer": "Shoichi Seto",
+    "href": "",
+    "icon": "userIcon"
+  },
+  {
+    "key": "Assignees",
+    "assignee": "nkctkt",
+    "href": "",
+    "icon": "userIcon"
+  },
+  {
+    "key": "Labels",
+    "labels": [
+      {
+        "label": "backend",
+        "color": "brown-500"
+      },
+      {
+        "label": "bug",
+        "color": "red-500"
+      }
+    ]
+  },
+  {
+    "key": "Priority",
+    "priority": "High",
+    "options": [
+      {
+        "value": "High",
+        "label": "High"
+      },
+      {
+        "value": "Medium",
+        "label": "Medium"
+      },
+      {
+        "value": "Low",
+        "label": "Low"
+      }
+    ]
+  },
+  {
+    "key": "Notifications",
+    "isSubscribe": true,
+    "setIsSubscribe": ""
+  },
+  {
+    "key": "Participants",
+    "participants": [
+      {
+        "icon": "userIcon"
+      },
+      {
+        "icon": "https://avatars.githubusercontent.com/u/1?v=4"
+      }
+    ]
+  },
+  {
+    "key": "Config",
+    "items": ""
+  }
+]

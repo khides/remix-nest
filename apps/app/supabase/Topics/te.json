@@ -1,0 +1,42 @@
+[
+    {
+        "id": "0096fda2-3ad5-4780-9705-c132b0a38869",
+        "creatorId": "c5e56a8a-1ddb-45ef-9a26-49477c7ba1f7",
+        "projectId": "af5ff3c3-79fd-4f04-a912-dacbe1f6f50a",
+        "name": "TestFrame",
+        "icon": null,
+        "description": "Frame for data001",
+        "properties": [
+            {
+                "name": "title",
+                "type": "text"
+            },
+            {
+                "name": "count",
+                "type": "number"
+            },
+            {
+                "name": "flags",
+                "type": "list"
+            }
+        ]
+    },
+    {
+        "id": "151b52b4-e1af-4fa1-8aa6-dc8044880664",
+        "creatorId": "c5e56a8a-1ddb-45ef-9a26-49477c7ba1f7",
+        "projectId": "af5ff3c3-79fd-4f04-a912-dacbe1f6f50a",
+        "name": "SecondFrame",
+        "icon": null,
+        "description": "Frame for data002",
+        "properties": [
+            {
+                "name": "is_active",
+                "type": "boolean"
+            },
+            {
+                "name": "info_map",
+                "type": "map"
+            }
+        ]
+    }
+]

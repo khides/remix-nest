@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectname": "コンポ1選定議論",
+      "explanation": "コンポ1の選定に関する議論のカテゴリ",
+      "affiliation": "andTopic",
+      "status": "Updated 3 hours ago",
+      "rhombus": 14,
+      "star": 12
+    },
+    {
+      "id": 2,
+      "projectname": "コンポ2選定義録",
+      "explanation": "コンポ2の選定に関する議論のカテゴリ",
+      "affiliation": "JAXA",
+      "status": "Updated 1 hours ago",
+      "rhombus": 10,
+      "star": 11
+    }
+  ]
+}

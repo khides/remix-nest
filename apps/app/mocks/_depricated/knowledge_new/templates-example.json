@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Bug Report",
+    "description": "バグ報告全般"
+  },
+  {
+    "title": "Chore",
+    "description": "雑多なこと全般"
+  },
+  {
+    "title": "Future Request",
+    "description": "機能追加全般"
+  },
+  {
+    "title": "Improvement Suggestion",
+    "description": "改善提案全般"
+  },
+  {
+    "title": "<Backend> Bug Report",
+    "description": "バックエンドのバグ報告"
+  },
+  {
+    "title": "<Backend> Chore",
+    "description": "バックエンドの雑多なこと"
+  },
+  {
+    "title": "<Backend> Future Request",
+    "description": "バックエンドの機能追加"
+  },
+  {
+    "title": "<Backend> Improvement Suggestion",
+    "description": "バックエンドの改善提案"
+  },
+  {
+    "title": "<Frontend> Bug Report",
+    "description": "フロントエンドのバグ報告"
+  },
+  {
+    "title": "<Frontend> Chore",
+    "description": "フロントエンドの雑多なこと"
+  },
+  {
+    "title": "<Frontend> Future Request",
+    "description": "フロントエンドの機能追加"
+  },
+  {
+    "title": "<Frontend> Improvement Suggestion",
+    "description": "フロントエンドの改善提案"
+  }
+]

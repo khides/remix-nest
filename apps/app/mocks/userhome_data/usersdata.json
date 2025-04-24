@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user123",
+      "fullname": "Shoichi Seto",
+      "email": "seto123@example.com",
+      "readme": "I'm a software engineer."
+    }
+  ]
+}

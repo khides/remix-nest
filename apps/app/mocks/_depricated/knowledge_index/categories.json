@@ -1,0 +1,29 @@
+[
+  {
+    "knowledgeCategoryId": "1",
+    "name": "todo",
+    "description": "Tasks that need to be done",
+    "label": "todo",
+    "icon": "fa-bullhorn",
+    "createdBy": "flap1",
+    "createdAt": "3 days ago"
+  },
+  {
+    "knowledgeCategoryId": "2",
+    "name": "action",
+    "description": "Action items that have been completed",
+    "label": "action",
+    "icon": "fa-comments",
+    "createdBy": "nkckt",
+    "createdAt": "3 days ago"
+  },
+  {
+    "knowledgeCategoryId": "3",
+    "name": "LL",
+    "description": "Lessons learned",
+    "label": "LL",
+    "icon": "fa-lightbulb",
+    "createdBy": "shoichi seto",
+    "createdAt": "3 days ago"
+  }
+]

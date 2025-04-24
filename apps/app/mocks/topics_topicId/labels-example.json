@@ -1,0 +1,14 @@
+[
+  {
+    "name": "bug",
+    "color": "red-500"
+  },
+  {
+    "name": "frontend",
+    "color": "blue-500"
+  },
+  {
+    "name": "backend",
+    "color": "black-500"
+  }
+]

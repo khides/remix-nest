@@ -1,0 +1,280 @@
+[
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "3 days ago",
+    "comment": [
+      {
+        "type": "heading2",
+        "children": [{ "text": "概要" }]
+      },
+      {
+        "type": "paragraph",
+        "children": [{ "text": "Issueページを作成する" }]
+      },
+      {
+        "type": "heading2",
+        "children": [{ "text": "背景" }]
+      },
+      {
+        "type": "paragraph",
+        "children": [
+          {
+            "text": "この機能を提案する背景として、プロジェクト管理やタスク追跡のために、ユーザーが容易にIssueを作成し、管理できる機能が求められています。これにより、チームメンバー間でのコミュニケーションが円滑になり、プロジェクトの進行状況を効果的に管理することができます。"
+          }
+        ]
+      },
+      {
+        "type": "heading2",
+        "children": [{ "text": "提案詳細" }]
+      },
+      {
+        "type": "paragraph",
+        "children": [{ "text": "以下のページ遷移構成を予定しています：" }]
+      },
+      {
+        "type": "bulleted-list",
+        "children": [
+          {
+            "type": "list-item",
+            "children": [{ "text": "Issues" }]
+          },
+          {
+            "type": "list-item",
+            "children": [{ "text": "NewIssue" }]
+          },
+          {
+            "type": "list-item",
+            "children": [{ "text": "IssueDetail" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "3 days ago",
+    "info": {
+      "key": "assignee",
+      "assignee": "nkctkt",
+      "icon": "userIcon"
+    }
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "3 days ago",
+    "info": {
+      "key": "label",
+      "labels": {
+        "label1": {
+          "name": "bug",
+          "color": "white",
+          "bg": "red-500"
+        },
+        "label2": {
+          "name": "backend",
+          "color": "white",
+          "bg": "brown-500"
+        }
+      }
+    }
+  },
+  {
+    "icon": "https://avatars.githubusercontent.com/u/1?v=4",
+    "postedBy": "John",
+    "postedAt": "12 hours ago",
+    "comment": [
+      {
+        "type": "paragraph",
+        "children": [{ "text": "Comment example" }]
+      }
+    ],
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      },
+      {
+        "icon": "https://avatars.githubusercontent.com/u/1?v=4",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 2" }]
+          }
+        ]
+      },
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 2" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "LL": {
+      "title": "LL example",
+      "description": [
+        {
+          "type": "paragraph",
+          "children": [{ "text": "This is description" }]
+        }
+      ]
+    },
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "todo": {
+      "title": "Todo example",
+      "description": [
+        {
+          "type": "paragraph",
+          "children": [{ "text": "This is description" }]
+        }
+      ]
+    },
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "action": {
+      "title": "Action example",
+      "description": [
+        {
+          "type": "paragraph",
+          "children": [{ "text": "This is description" }]
+        }
+      ],
+      "result": "This is result"
+    },
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "note": {
+      "noteId": "noteId"
+    },
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "ex": {
+      "title": "Ref example",
+      "text": [
+        {
+          "type": "paragraph",
+          "children": [{ "text": "This is description" }]
+        }
+      ],
+      "tool": "Slack",
+      "href": "https://slack.com"
+    },
+    "replies": [
+      {
+        "icon": "userIcon",
+        "postedBy": "nkctkt",
+        "postedAt": "1 hours ago",
+        "comment": [
+          {
+            "type": "paragraph",
+            "children": [{ "text": "Reply example 1" }]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "6 hours ago",
+    "info": {
+      "key": "action",
+      "description": "deal with this issue"
+    }
+  },
+  {
+    "icon": "userIcon",
+    "postedBy": "nkctkt",
+    "postedAt": "1 hours ago",
+    "info": {
+      "key": "notification",
+      "subscribe": true
+    }
+  }
+]

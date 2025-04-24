@@ -1,0 +1,29 @@
+[
+  {
+    "knowledgeRelatedId": "1",
+    "categoryA": "todo",
+    "categoryB": "action",
+    "type": "include",
+    "description": "Tasks that need to be done",
+    "createdBy": "flap1",
+    "createdAt": "3 days ago"
+  },
+  {
+    "knowledgeRelatedId": "2",
+    "categoryA": "todo",
+    "categoryB": "LL",
+    "type": "include",
+    "description": "Action items that have been completed",
+    "createdBy": "nkckt",
+    "createdAt": "3 days ago"
+  },
+  {
+    "knowledgeRelatedId": "3",
+    "categoryA": "action",
+    "categoryB": "LL",
+    "type": "include",
+    "description": "Lessons learned",
+    "createdBy": "shoichi seto",
+    "createdAt": "3 days ago"
+  }
+]

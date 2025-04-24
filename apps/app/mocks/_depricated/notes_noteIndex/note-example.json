@@ -1,0 +1,546 @@
+[
+  {
+    "uid": "343e8142-200e-4b9b-a58f-63cf71e26e96",
+    "index": 0,
+    "content": {
+      "type": "heading1",
+      "children": [
+        {
+          "text": "提案書の全体的な簡略化"
+        }
+      ],
+      "uid": "343e8142-200e-4b9b-a58f-63cf71e26e96"
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "e376a5c3-8203-48fb-8214-55355afbf009",
+    "index": 1,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "e376a5c3-8203-48fb-8214-55355afbf009",
+      "children": [
+        {
+          "text": "説明が多く全体像が見えにくい",
+          "bold": true
+        }
+      ]
+    },
+    "author": "nex",
+    "recommendation": "流し読みでも正しく解釈できるような文章の流れになるようにする"
+  },
+  {
+    "uid": "05c60164-c105-4d77-8df2-4352775e6b13",
+    "index": 2,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "05c60164-c105-4d77-8df2-4352775e6b13",
+      "children": [
+        {
+          "text": "構成を修正する"
+        }
+      ],
+      "indent": 1
+    }
+  },
+  {
+    "uid": "4184c3c1-d888-4366-a523-b336dca8cc6a",
+    "index": 3,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "4184c3c1-d888-4366-a523-b336dca8cc6a",
+      "indent": 1,
+      "children": [
+        {
+          "text": "全体を",
+          "highlight": true,
+          "type": "Action"
+        },
+        {
+          "text": "わかりやすく",
+          "underline": true,
+          "highlight": true,
+          "type": "Action"
+        },
+        {
+          "text": "表した図を用意する",
+          "highlight": true,
+          "type": "Action"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "88b12c7c-da56-416e-9fd8-16e3782c78e0",
+    "index": 4,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "88b12c7c-da56-416e-9fd8-16e3782c78e0",
+      "indent": 0,
+      "children": [
+        {
+          "text": "用語を確認する",
+          "bold": true
+        }
+      ]
+    }
+  },
+  {
+    "uid": "b641b6df-6137-4866-804c-bfd9cd16686b",
+    "index": 5,
+    "content": {
+      "type": "check-list-item",
+      "uid": "b641b6df-6137-4866-804c-bfd9cd16686b",
+      "indent": 1,
+      "checked": true,
+      "children": [
+        {
+          "text": "専門用語が説明なしに使われていないか確認する",
+          "highlight": true,
+          "type": "Requirement"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "71795171-caf3-4ffd-98a7-4abf7e8d4ea6",
+    "index": 6,
+    "content": {
+      "type": "check-list-item",
+      "uid": "71795171-caf3-4ffd-98a7-4abf7e8d4ea6",
+      "indent": 1,
+      "children": [
+        {
+          "text": "解釈に差異が出ないように再度確認する",
+          "highlight": true,
+          "type": "Requirement"
+        }
+      ],
+      "checked": false
+    }
+  },
+  {
+    "uid": "5822eeeb-29c4-4035-b351-fbd655e88707",
+    "index": 7,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "5822eeeb-29c4-4035-b351-fbd655e88707",
+      "indent": 0,
+      "children": [
+        {
+          "text": "提案プロジェクトの特徴と目的との繋がりを明示する",
+          "bold": true
+        }
+      ]
+    }
+  },
+  {
+    "uid": "fbc90015-daa7-4248-bafe-9c38ecf202af",
+    "index": 8,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "fbc90015-daa7-4248-bafe-9c38ecf202af",
+      "indent": 1,
+      "children": [
+        {
+          "text": "図にするとわかりやすいか",
+          "highlight": true,
+          "type": "Q&A"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "97819aa6-b11b-46ae-8a92-1fc8f5c32ae3",
+    "index": 9,
+    "content": {
+      "type": "image",
+      "url": "https://user0514.cdnw.net/shared/img/thumb/danda0I9A4330_TP_V.jpg",
+      "children": [
+        {
+          "text": ""
+        }
+      ],
+      "uid": "97819aa6-b11b-46ae-8a92-1fc8f5c32ae3"
+    }
+  },
+  {
+    "uid": "873e18db-93c6-4f6e-8e4e-f7ab23f7f6e9",
+    "index": 10,
+    "content": {
+      "type": "paragraph",
+      "uid": "873e18db-93c6-4f6e-8e4e-f7ab23f7f6e9",
+      "indent": 0,
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    }
+  },
+  {
+    "uid": "41a194af-c6df-4bc8-b0d6-3ec043829397",
+    "index": 11,
+    "content": {
+      "type": "heading1",
+      "uid": "41a194af-c6df-4bc8-b0d6-3ec043829397",
+      "indent": 0,
+      "children": [
+        {
+          "text": "ビジネスモデルのドキュメント追加"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "db011eab-cfcf-499b-8c77-a939fa453118",
+    "index": 12,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "db011eab-cfcf-499b-8c77-a939fa453118",
+      "indent": 0,
+      "children": [
+        {
+          "text": "使っている図はそのままで良さそう",
+          "highlight": true,
+          "type": "LessonsLearned"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "acc7b639-8460-4e7a-bca0-385948a70157",
+    "index": 13,
+    "content": {
+      "type": "numbered-list",
+      "uid": "acc7b639-8460-4e7a-bca0-385948a70157",
+      "indent": 1,
+      "children": [
+        {
+          "text": "カネの流れ"
+        }
+      ],
+      "start": 1
+    }
+  },
+  {
+    "uid": "a3ef7165-16d5-4b00-bf9b-3acfab3cd40d",
+    "index": 14,
+    "content": {
+      "type": "numbered-list",
+      "uid": "a3ef7165-16d5-4b00-bf9b-3acfab3cd40d",
+      "indent": 1,
+      "start": 2,
+      "children": [
+        {
+          "text": "情報の流れ"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "ad61e0c6-0e08-4b00-bcb6-6dfb4145b862",
+    "index": 15,
+    "content": {
+      "type": "numbered-list",
+      "uid": "ad61e0c6-0e08-4b00-bcb6-6dfb4145b862",
+      "indent": 1,
+      "start": 3,
+      "children": [
+        {
+          "text": "モノの流れ"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "94ed37bf-ddeb-47a6-9f7c-ca8d8eba0661",
+    "index": 16,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "94ed37bf-ddeb-47a6-9f7c-ca8d8eba0661",
+      "indent": 0,
+      "start": 4,
+      "children": [
+        {
+          "text": "ビジネスモデルの根拠づけ",
+          "bold": true
+        }
+      ]
+    }
+  },
+  {
+    "uid": "f164e119-b581-4fde-8c5d-05b677e96d33",
+    "index": 17,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "f164e119-b581-4fde-8c5d-05b677e96d33",
+      "indent": 1,
+      "children": [
+        {
+          "text": "「ものづくり白書」などを別紙で追加する",
+          "highlight": true,
+          "type": "Action"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "153b1774-fa16-482d-942e-39b291084e7f",
+    "index": 18,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "153b1774-fa16-482d-942e-39b291084e7f",
+      "indent": 0,
+      "children": [
+        {
+          "text": "市場規模の根拠づけ",
+          "bold": true
+        }
+      ]
+    }
+  },
+  {
+    "uid": "2dce624e-d3d0-456c-b2bc-04d0b66da56f",
+    "index": 19,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "2dce624e-d3d0-456c-b2bc-04d0b66da56f",
+      "indent": 1,
+      "children": [
+        {
+          "text": "特にTAMについて",
+          "underline": true
+        }
+      ]
+    }
+  },
+  {
+    "uid": "10973d2a-3070-4559-9228-4b5633e0862c",
+    "index": 20,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "10973d2a-3070-4559-9228-4b5633e0862c",
+      "indent": 2,
+      "children": [
+        {
+          "text": "プロジェクト管理ツールの市場規模の妥当性"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "6dd2c74d-4d16-402e-907d-e0863d6f8389",
+    "index": 21,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "6dd2c74d-4d16-402e-907d-e0863d6f8389",
+      "indent": 1,
+      "children": [
+        {
+          "text": "SAMとSOMは？",
+          "underline": true
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "239d7b6e-497a-4e2f-b61e-69cb512a3b31",
+    "index": 22,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "239d7b6e-497a-4e2f-b61e-69cb512a3b31",
+      "indent": 2,
+      "children": [
+        {
+          "text": "ボトムアップの計算式を含める"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "306781cf-e157-49c7-a699-c942c89f43d5",
+    "index": 23,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "306781cf-e157-49c7-a699-c942c89f43d5",
+      "indent": 2,
+      "children": [
+        {
+          "text": "スペースが足りないので別紙へ"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "7252254b-aed2-4ca6-a504-bd31353357f4",
+    "index": 24,
+    "content": {
+      "type": "paragraph",
+      "uid": "7252254b-aed2-4ca6-a504-bd31353357f4",
+      "indent": 0,
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    },
+    "recommendation": "資金計画の妥当性を再確認する"
+  },
+  {
+    "uid": "76778534-204e-4a9d-8292-63e757b7c1c4",
+    "index": 25,
+    "content": {
+      "type": "heading1",
+      "uid": "76778534-204e-4a9d-8292-63e757b7c1c4",
+      "indent": 0,
+      "children": [
+        {
+          "text": "知識構造に関するドキュメント追加"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "b2c0f392-b003-46a6-bc1b-12adf952696f",
+    "index": 26,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "b2c0f392-b003-46a6-bc1b-12adf952696f",
+      "indent": 0,
+      "children": [
+        {
+          "text": "議事録に注目している根拠を示す"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "ffe6bdcb-8245-4e0b-baf1-ffe27042d423",
+    "index": 27,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "ffe6bdcb-8245-4e0b-baf1-ffe27042d423",
+      "indent": 0,
+      "children": [
+        {
+          "text": "知識構造のベン図",
+          "underline": true
+        },
+        {
+          "text": "を中心とした説明を追加する"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "5d8da910-48d3-4547-a98b-a5b805b4863a",
+    "index": 28,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "5d8da910-48d3-4547-a98b-a5b805b4863a",
+      "indent": 1,
+      "children": [
+        {
+          "text": "数式による説明も追加する"
+        }
+      ]
+    },
+    "recommendation": "提案者に数式はわかりにくい"
+  },
+  {
+    "uid": "fba10091-0ae2-45ca-b11e-7991f09834ee",
+    "index": 29,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "fba10091-0ae2-45ca-b11e-7991f09834ee",
+      "indent": 0,
+      "children": [
+        {
+          "text": "課題に対する解像度が高く、十分に議論が詰まっていることを示す"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "1ee9751b-5dd8-45f9-be3b-cb0088d1771a",
+    "index": 30,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "1ee9751b-5dd8-45f9-be3b-cb0088d1771a",
+      "indent": 1,
+      "children": [
+        {
+          "text": "ヒアリングも詳細化するのか？",
+          "underline": true,
+          "highlight": true,
+          "type": "Q&A"
+        }
+      ]
+    },
+    "recommendation": "ロゴや企業名を出すときは許可を取るようにすること"
+  },
+  {
+    "uid": "5322c53f-2026-404e-9aec-3fda66c97ff0",
+    "index": 31,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "5322c53f-2026-404e-9aec-3fda66c97ff0",
+      "indent": 2,
+      "children": [
+        {
+          "text": "知識管理の現状に関しては基本的に「自分が言っていることを他言しないでほしい」ということを言われる"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "dc3162c4-cc07-4370-9c72-fb38a3c00a86",
+    "index": 32,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "dc3162c4-cc07-4370-9c72-fb38a3c00a86",
+      "indent": 2,
+      "children": [
+        {
+          "text": "知識管理の重要性が認識されているゆえに、不十分であることに課題感を持っている"
+        }
+      ]
+    }
+  },
+  {
+    "uid": "75d35598-ffad-4bf1-aaae-5c8d4e69c9f0",
+    "index": 33,
+    "content": {
+      "type": "bulleted-list",
+      "uid": "75d35598-ffad-4bf1-aaae-5c8d4e69c9f0",
+      "indent": 2,
+      "children": [
+        {
+          "text": "具体的な企業名は出さずに立場や業界について軽く流れる程度に"
+        }
+      ]
+    },
+    "author": "nex"
+  },
+  {
+    "uid": "c0a58a8d-db12-4fc5-83de-048bccf80f60",
+    "index": 34,
+    "content": {
+      "type": "paragraph",
+      "uid": "c0a58a8d-db12-4fc5-83de-048bccf80f60",
+      "indent": 0,
+      "children": [
+        {
+          "text": ""
+        }
+      ]
+    }
+  }
+]

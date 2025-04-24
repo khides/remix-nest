@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Announcements",
+    "description": "Updates from maintainers",
+    "label": "Announcements",
+    "icon": "fa-bullhorn",
+    "categoryId": "0"
+  },
+  {
+    "title": "General",
+    "description": "Chat about anything and everything here",
+    "label": "General",
+    "icon": "fa-comments",
+    "categoryId": "1"
+  },
+  {
+    "title": "Ideas",
+    "description": "Share ideas for new features",
+    "label": "Ideas",
+    "icon": "fa-lightbulb",
+    "categoryId": "2"
+  },
+  {
+    "title": "Polls",
+    "description": "Take a vote from the community",
+    "label": "Polls",
+    "icon": "fa-poll",
+    "categoryId": "3"
+  },
+  {
+    "title": "Q&A",
+    "description": "Answers enabled  ·  Ask the community for help",
+    "label": "Q&A",
+    "icon": "fa-question-circle",
+    "categoryId": "4"
+  },
+  {
+    "title": "Show and tell",
+    "description": "Show off something you've made",
+    "label": "Show and tell",
+    "icon": "fa-eye",
+    "categoryId": "5"
+  }
+]
