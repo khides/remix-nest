@@ -1,0 +1,172 @@
+name: Release Notification to Slack
+
+on:
+  release:
+    types: [created, published, released, prereleased]
+  # 手動実行も可能にする
+  workflow_dispatch:
+
+jobs:
+  notify-slack:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # リポジトリをチェックアウト
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 全履歴を取得（リリース情報の取得に必要）
+
+      # リリースイベントから情報を取得、または最新のリリースを取得
+      - name: Get release information
+        id: get_release
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let latestRelease;
+            
+            // リリースイベントによってトリガーされた場合
+            if (context.eventName === 'release') {
+              console.log('Triggered by release event');
+              latestRelease = context.payload.release;
+            } else {
+              // 手動実行やその他のトリガーの場合は最新のリリースを取得
+              console.log('Fetching latest release');
+              const { data: releases } = await github.rest.repos.listReleases({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                per_page: 1
+              });
+              
+              if (releases.length === 0) {
+                core.setFailed('No releases found');
+                return;
+              }
+              
+              latestRelease = releases[0];
+            }
+            
+            console.log(`Release: ${latestRelease.name || latestRelease.tag_name}, Draft: ${latestRelease.draft}, Created: ${latestRelease.created_at}`);
+            
+            core.setOutput('release_name', latestRelease.name || latestRelease.tag_name);
+            core.setOutput('is_draft', latestRelease.draft ? 'true' : 'false');
+            core.setOutput('is_prerelease', latestRelease.prerelease ? 'true' : 'false');
+            
+            // リリースノートをJSON安全な形式にエスケープ
+            let releaseBody = latestRelease.body || 'No release notes provided';
+            // 改行を\nに変換し、ダブルクォートをエスケープ
+            releaseBody = releaseBody.replace(/\\/g, '\\\\')
+                                     .replace(/"/g, '\\"')
+                                     .replace(/\n/g, '\\n')
+                                     .replace(/\r/g, '\\r')
+                                     .replace(/\t/g, '\\t');
+            
+            core.setOutput('release_body', releaseBody);
+            core.setOutput('release_url', latestRelease.html_url);
+            core.setOutput('release_tag', latestRelease.tag_name);
+
+      # マージを実行したユーザー情報を取得
+      - name: Get merge author
+        id: get_author
+        run: |
+          echo "author=${{ github.actor }}" >> $GITHUB_OUTPUT
+
+      # Slackチャンネル名を環境変数から取得（デフォルト: #releases）
+      - name: Set Slack channel
+        id: slack_channel
+        run: |
+          echo "channel=${{ vars.SLACK_RELEASE_CHANNEL || '#at_system_announce' }}" >> $GITHUB_OUTPUT
+
+      # Slackにメインメッセージを送信（Web APIを使用）
+      - name: Send main notification to Slack
+        id: slack_main
+        uses: slackapi/slack-github-action@v1.27.0
+        with:
+          channel-id: ${{ steps.slack_channel.outputs.channel }}
+          payload: |
+            {
+              "text": "🚀 新しいリリースが公開されました",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "🚀 リリース通知"
+                  }
+                },
+                {
+                  "type": "section",
+                  "fields": [
+                    {
+                      "type": "mrkdwn",
+                      "text": "*リポジトリ:*\n${{ github.repository }}"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*バージョン:*\n${{ steps.get_release.outputs.release_name }}${{ steps.get_release.outputs.is_draft == 'true' && ' (Draft)' || '' }}${{ steps.get_release.outputs.is_prerelease == 'true' && ' (Pre-release)' || '' }}"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*実行者:*\n${{ steps.get_author.outputs.author }}"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*リンク:*\n<${{ steps.get_release.outputs.release_url }}|GitHubで確認>"
+                    }
+                  ]
+                }
+              ]
+            }
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.TEST_SLACK_BOT_TOKEN }}
+
+      # スレッドにリリースノートを投稿
+      - name: Send release notes as thread reply
+        uses: slackapi/slack-github-action@v1.27.0
+        with:
+          channel-id: ${{ steps.slack_channel.outputs.channel }}
+          payload: |
+            {
+              "thread_ts": "${{ steps.slack_main.outputs.ts }}",
+              "text": "📝 リリースノート詳細",
+              "blocks": [
+                {
+                  "type": "header",
+                  "text": {
+                    "type": "plain_text",
+                    "text": "📝 リリースノート (${{ steps.get_release.outputs.release_tag }})"
+                  }
+                },
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "${{ steps.get_release.outputs.release_body }}"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.TEST_SLACK_BOT_TOKEN }}
+
+      # エラー時の通知（Webhookを使用）
+      - name: Notify failure to Slack
+        if: failure()
+        uses: slackapi/slack-github-action@v1.27.0
+        with:
+          payload: |
+            {
+              "text": "❌ リリース通知の送信に失敗しました",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "❌ *リリース通知エラー*\n*リポジトリ:* ${{ github.repository }}\n*実行者:* ${{ github.actor }}\n*ワークフロー:* <${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}|詳細を確認>"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.TEST_SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_TYPE: INCOMING_WEBHOOK
