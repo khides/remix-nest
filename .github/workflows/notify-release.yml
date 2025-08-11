@@ -103,6 +103,13 @@ jobs:
                 },
                 {
                   "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "<!channel> 新しいリリースが公開されました！"
+                  }
+                },
+                {
+                  "type": "section",
                   "fields": [
                     {
                       "type": "mrkdwn",
