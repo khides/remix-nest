@@ -82,7 +82,7 @@ jobs:
       - name: Set Slack channel
         id: slack_channel
         run: |
-          echo "channel=${{ vars.SLACK_RELEASE_CHANNEL || '#at_system_announce' }}" >> $GITHUB_OUTPUT
+          echo "channel=${{ vars.SLACK_RELEASE_CHANNEL || '#private' }}" >> $GITHUB_OUTPUT
 
       # Slackにメインメッセージを送信（Web APIを使用）
       - name: Send main notification to Slack
@@ -92,7 +92,7 @@ jobs:
           channel-id: ${{ steps.slack_channel.outputs.channel }}
           payload: |
             {
-              "text": "🚀 新しいリリースが公開されました",
+              "text": "<!channel> 🚀 新しいリリースが公開されました",
               "blocks": [
                 {
                   "type": "header",
@@ -125,7 +125,7 @@ jobs:
               ]
             }
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.TEST_SLACK_BOT_TOKEN }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATION_TOKEN }}
 
       # スレッドにリリースノートを投稿
       - name: Send release notes as thread reply
@@ -154,7 +154,7 @@ jobs:
               ]
             }
         env:
-          SLACK_BOT_TOKEN: ${{ secrets.TEST_SLACK_BOT_TOKEN }}
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_NOTIFICATION_TOKEN }}
 
       # エラー時の通知（Webhookを使用）
       - name: Notify failure to Slack
