@@ -3,12 +3,19 @@ name: Release Notification to Slack
 on:
   release:
     types: [created, published, released, prereleased]
+  # Releaseワークフロー完了後にも実行
+  workflow_run:
+    workflows: ["Release"]
+    types:
+      - completed
   # 手動実行も可能にする
   workflow_dispatch:
 
 jobs:
   notify-slack:
     runs-on: ubuntu-latest
+    # workflow_runの場合は成功時のみ実行
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     
     steps:
       # リポジトリをチェックアウト
