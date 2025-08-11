@@ -75,7 +75,7 @@ jobs:
       - name: Set Slack channel
         id: slack_channel
         run: |
-          echo "channel=${{ vars.SLACK_RELEASE_CHANNEL || '#at_system_announce' }}" >> $GITHUB_OUTPUT
+          echo "channel=${{ vars.SLACK_RELEASE_CHANNEL || '#private' }}" >> $GITHUB_OUTPUT
 
       # Slackにメインメッセージを送信（Web APIを使用）
       - name: Send main notification to Slack
