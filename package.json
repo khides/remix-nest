@@ -6,11 +6,11 @@
         "typecheck": "npm --prefix ./apps run typecheck && npm --prefix ./api run typecheck"
     },
     "devDependencies": {
-        "supabase": "^2.1.1",
-        "@playwright/test": "^1.51.1"
+        "supabase": "^2.76.11",
+        "@playwright/test": "^1.58.2"
 
     },
     "dependencies": {
-        "@nestjs/swagger": "^11.1.0"
+        "@nestjs/swagger": "^11.2.6"
     }
 }
